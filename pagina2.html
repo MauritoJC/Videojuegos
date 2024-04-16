@@ -9,8 +9,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #2a2f38;
-            color: #2a2f38; /* Color de texto igual al fondo */
+            background-color: #222; /* Color de fondo más oscuro */
+            color: #fff;
         }
         header {
             background-color: #333;
@@ -28,6 +28,9 @@
             color: #fff;
             text-decoration: none;
             padding: 5px 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
         nav a:hover {
             background-color: #555;
@@ -39,24 +42,42 @@
         }
         section {
             margin-bottom: 40px;
-            background-color: #fff;
+            background-color: #333; /* Nuevo color de fondo para las secciones */
             padding: 20px;
             border-radius: 5px;
-            color: #2a2f38; /* Color de texto igual al fondo */
+        }
+        section h2 {
+            color: #fff; /* Color de título */
+        }
+        section p {
+            margin-bottom: 15px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
         }
         footer {
             background-color: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-        }
-        /* Estilos para las imágenes */
-        img {
-            display: block;
-            margin: 0 auto; /* Centrar las imágenes */
-            max-width: 100%; /* Imágenes ocupan todo el ancho del contenedor */
-            height: auto; /* Mantener la proporción de aspecto */
-            margin-bottom: 20px; /* Espacio inferior entre imágenes */
         }
     </style>
 </head>
@@ -68,7 +89,6 @@
         <a href="#historia">Historia</a>
         <a href="#jugabilidad">Jugabilidad</a>
         <a href="#descarga">Descargar</a>
-        <a href="#video">Video</a>
     </nav>
     <div class="container">
         <section id="historia">
@@ -78,8 +98,7 @@
             <p>La jugabilidad se centra en la supervivencia y el sigilo, ya que el personaje principal no puede combatir directamente a sus enemigos y debe esquivarlos y esconderse para sobrevivir.</p>
             <p>Outlast ha sido aclamado por su atmósfera tensa, gráficos detallados y narrativa envolvente que te mantendrá al borde de tu asiento en cada momento.</p>
         </section>
-        <!-- Imagen más grande -->
-        <img src="imagenes/pag1/mg1.jpeg" alt="Imagen 1" style="max-width: 400%;">
+        <img src="imagenes/pag1/mg1.jpeg" alt="Imagen 1">
         <section id="jugabilidad">
             <h2>Jugabilidad y Desafío</h2>
             <p>Outlast desafía a los jugadores con una experiencia intensa y llena de terror.</p>
@@ -87,20 +106,7 @@
             <p>Explora los oscuros pasillos, resuelve puzles y descubre la verdad detrás de los horrores que se esconden en Outlast.</p>
             <p>¡Prepárate para una experiencia de terror inolvidable!</p>
         </section>
-        <!-- Imagen más grande -->
-        <img src="imagenes/pag1/img2.jpeg" alt="Imagen 2" style="max-width: 1500px;">
+        <img src="imagenes/pag1/img2.jpeg" alt="Imagen 2">
         <section id="descarga">
             <h2>Descargar Outlast en Steam</h2>
-            <p>Puedes descargar el juego en Steam haciendo clic en el siguiente enlace:</p>
-            <a href="https://store.steampowered.com/app/238320/Outlast/" target="_blank">
-                <button style="padding: 10px 20px; font-size: 16px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Descarga aquí</button>
-            </a>
-        </section>
-
-    </div>
-    
-    <footer>
-        <p>&copy; 2024 Outlast. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+            <p>Puedes descargar el juego en Steam
